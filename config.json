@@ -1,0 +1,205 @@
+{
+  "log": {
+    "access": "",
+    "error": "",
+    "loglevel": "warning"
+  },
+  "inbounds": [
+    {
+      "port": 34001,
+      "protocol": "vmess",
+      "settings": {
+        "udp": false,
+        "clients": [
+          {
+            "id": "f28683dc-590a-401f-b811-e121f830eadb",
+            "alterId": 0,
+            "email": "t@t.tt"
+          }
+        ],
+        "allowTransparent": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "wapzt.189.cn"
+          }
+        }
+      }
+    },
+	{
+	  "port": 34005,
+	  "protocol": "vmess",
+	  "settings": {
+	    "udp": false,
+	    "clients": [
+	      {
+	        "id": "41a2b0b2-11bb-4747-9ed6-2f3330fda730",
+	        "alterId": 0,
+	        "email": "t@t.tt"
+	      }
+	    ],
+	    "allowTransparent": false
+	  },
+	  "streamSettings": {
+	    "network": "ws",
+	    "wsSettings": {
+	      "headers": {
+	        "Host": "pull.free.video.10010.com"
+	      }
+	    }
+	  }
+	},
+	{
+	  "port": 34003,
+	  "protocol": "vmess",
+	  "settings": {
+	    "udp": false,
+	    "clients": [
+	      {
+	        "id": "bb29f521-8e55-45e5-a3ba-4c747cf1a6b6",
+	        "alterId": 0,
+	        "email": "t@t.tt"
+	      }
+	    ],
+	    "allowTransparent": false
+	  },
+	  "streamSettings": {
+	    "network": "ws",
+	    "wsSettings": {
+	      "headers": {
+	        "Host": "pull.free.video.10010.com"
+	      }
+	    }
+	  }
+	},
+	{
+	  "port": 34002,
+	  "protocol": "vmess",
+	  "settings": {
+	    "udp": false,
+	    "clients": [
+	      {
+	        "id": "5c31ba65-bcfe-4585-87e1-6b82aa2ca4f9",
+	        "alterId": 0,
+	        "email": "t@t.tt"
+	      }
+	    ],
+	    "allowTransparent": false
+	  },
+	  "streamSettings": {
+	    "network": "tcp"
+	  }
+	},
+	{
+      "port": 34006,
+      "protocol": "vmess",
+      "settings": {
+        "udp": false,
+        "clients": [
+          {
+            "id": "2d948ed6-332e-4133-94fa-081b4438622a",
+            "alterId": 0,
+            "email": "t@t.tt"
+          }
+        ],
+        "allowTransparent": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "www.189.cn"
+          }
+        }
+      }
+    },
+	{
+      "port": 34010,
+      "protocol": "vmess",
+      "settings": {
+        "udp": false,
+        "clients": [
+          {
+            "id": "cc585bef-c2ed-449f-854c-a6e0db5661de",
+            "alterId": 0,
+            "email": "t@t.tt"
+          }
+        ],
+        "allowTransparent": false
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "http"
+          }
+        }
+      }
+    },
+	{
+      "port": 34012,
+      "protocol": "vmess",
+      "settings": {
+        "udp": false,
+        "clients": [
+          {
+            "id": "7b9702a4-d103-4b02-8190-407c2a067d44",
+            "alterId": 0,
+            "email": "t@t.tt"
+          }
+        ],
+        "allowTransparent": false
+      },
+      "streamSettings": {
+        "network": "h2",
+        "httpSettings": {
+          "path": "",
+          "host": [
+            "pull.free.video.10010.com"
+          ]
+        }
+      }
+    },
+	{
+      "port": 34014,
+      "protocol": "vless",
+      "settings": {
+        "udp": false,
+        "clients": [
+          {
+            "id": "d61486ac-9343-48df-b8e7-fddd2c640a6f",
+            "alterId": 0,
+            "email": "t@t.tt",
+            "flow": ""
+          }
+        ],
+        "decryption": "none",
+        "allowTransparent": false
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "headers": {
+            "Host": "pull.free.video.10010.com"
+          }
+        }
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom"
+    },
+    {
+      "tag": "block",
+      "protocol": "blackhole",
+      "settings": {}
+    }
+  ],
+  "routing": {
+    "domainStrategy": "IPIfNonMatch",
+    "rules": []
+  }
+}
